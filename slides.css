@@ -1,0 +1,12 @@
+/* Presentación compacta y legible */
+.reveal { font-family: "Aptos", "Segoe UI", Arial, sans-serif; }
+.reveal .slides section { text-align: left; }
+.reveal h1, .reveal h2 { color: #16394c; font-weight: 750; }
+.reveal h2 { font-size: 1.34em; margin-bottom: .55em; }
+.reveal p, .reveal li { line-height: 1.25; }
+.reveal ul, .reveal ol { margin-left: 1.05em; }
+.reveal li { margin-bottom: .24em; }
+.reveal pre { font-size: .66em; }
+.reveal .nota { background: #edf4f7; border-left: 5px solid #427d91; padding: .45em .65em; margin-top: .6em; font-size: .78em; border-radius: .2em; }
+.reveal a { color: #216e89; }
+.reveal .math { font-size: .94em; }

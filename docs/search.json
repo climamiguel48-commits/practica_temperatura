@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html#en-qué-consiste-la-práctica",
+    "href": "index.html#en-qué-consiste-la-práctica",
+    "title": "Práctica de Régimen de Temperatura",
+    "section": "¿En qué consiste la práctica?",
+    "text": "¿En qué consiste la práctica?\nUna sesión breve para caracterizar el régimen térmico de una localidad.\n\nTrabajaremos con temperaturas diarias del período 2001–2025.\nCalcularemos promedios mensuales a partir de todos los años.\nObtendremos dos gráficos y tablas de resultados.\nAl terminar, elaboraremos un informe de análisis.\n\n\nNo se calcularán grados-día. La actividad se centra en temperaturas y amplitudes térmicas."
+  },
+  {
+    "objectID": "index.html#objetivos-de-aprendizaje",
+    "href": "index.html#objetivos-de-aprendizaje",
+    "title": "Práctica de Régimen de Temperatura",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\n\nCalcular las temperaturas medias, máximas y mínimas mensuales de una serie histórica.\nDeterminar la amplitud térmica diaria media mensual y la amplitud del ciclo anual medio.\nRepresentar los resultados en gráficos sencillos.\nInterpretar el comportamiento térmico estacional de la localidad."
+  },
+  {
+    "objectID": "index.html#antes-de-comenzar",
+    "href": "index.html#antes-de-comenzar",
+    "title": "Práctica de Régimen de Temperatura",
+    "section": "Antes de comenzar",
+    "text": "Antes de comenzar\nOrganiza tu proyecto en RStudio con esta estructura:\nRegimen_Temperatura/\n├── 01_practica_regimen_temperatura.R\n├── datos/\n│   └── datos_diarios_2001_2025.csv\n└── resultados/  ← se crea al ejecutar el script\n\nModifica latitud y longitud en el script para elegir tu localidad.\nEl script obtiene los registros diarios desde NASA POWER (AG) y guarda el CSV en datos/.\nConserva ese archivo para reproducir el análisis.\n\n\nUsa el script ajustado incluido en este proyecto: lee el CSV que genera en el paso previo."
+  },
+  {
+    "objectID": "index.html#actividad-1-temperaturas-mensuales",
+    "href": "index.html#actividad-1-temperaturas-mensuales",
+    "title": "Práctica de Régimen de Temperatura",
+    "section": "Actividad 1 · Temperaturas mensuales",
+    "text": "Actividad 1 · Temperaturas mensuales\nA partir de la serie 2001–2025:\n\nCalcula el promedio de T máxima, T media y T mínima para cada mes de cada año.\nPromedia después esos valores entre años, para obtener el ciclo anual medio.\nIdentifica los meses más cálido y más frío.\n\nProducto: un gráfico con tres curvas mensuales."
+  },
+  {
+    "objectID": "index.html#actividad-2-amplitudes-térmicas",
+    "href": "index.html#actividad-2-amplitudes-térmicas",
+    "title": "Práctica de Régimen de Temperatura",
+    "section": "Actividad 2 · Amplitudes térmicas",
+    "text": "Actividad 2 · Amplitudes térmicas\nAmplitud térmica diaria (ATD)\n[ATD = T_{max} - T_{min}]\nCalcula la ATD diaria y después su promedio por mes, considerando todos los años.\nAmplitud del ciclo anual medio\n[A_{anual} = {mes más cálido} - {mes más frío}]\nProducto: gráfico de barras con las 12 ATD mensuales medias y valor de amplitud anual."
+  },
+  {
+    "objectID": "index.html#ejecución-y-archivos-de-salida",
+    "href": "index.html#ejecución-y-archivos-de-salida",
+    "title": "Práctica de Régimen de Temperatura",
+    "section": "Ejecución y archivos de salida",
+    "text": "Ejecución y archivos de salida\nDesde la carpeta principal del proyecto, ejecuta:\nsource(\"01_practica_regimen_temperatura.R\")\nGuarda los archivos de entrada en datos/ y los resultados en resultados/:\n\ntemperatura_por_anio_y_mes.csv\ntemperatura_promedio_mensual_2001_2025.csv\nresumen_regimen_temperatura.csv\n\nIncorpora los dos gráficos al informe (puedes exportarlos desde el panel de gráficos de RStudio)."
+  },
+  {
+    "objectID": "index.html#informe-final-preguntas-de-análisis",
+    "href": "index.html#informe-final-preguntas-de-análisis",
+    "title": "Práctica de Régimen de Temperatura",
+    "section": "Informe final · Preguntas de análisis",
+    "text": "Informe final · Preguntas de análisis\nUna vez terminada la corrida, prepara un informe breve con metodología, tablas, gráficos y respuestas:\n\n¿Cuáles son los meses con mayor y menor temperatura media en 2001–2025?\n¿Cuál es la amplitud térmica del ciclo anual medio?\n¿En qué mes se observa la mayor amplitud térmica diaria promedio y por qué?\n¿Qué diferencias estacionales muestran las temperaturas y la amplitud diaria?\n\nEntrega: informe con interpretación de resultados, no solo capturas de R."
+  },
+  {
+    "objectID": "index.html#materiales-y-cierre",
+    "href": "index.html#materiales-y-cierre",
+    "title": "Práctica de Régimen de Temperatura",
+    "section": "Materiales y cierre",
+    "text": "Materiales y cierre\n\nDescargar script para la práctica\nConsultar script original adjunto\n\nSecuencia de trabajo\nPreparar datos → ejecutar cálculos → revisar gráficos y tablas → redactar informe.\n\nEl archivo original genera un CSV, pero intenta abrir un XLSX después. La versión recomendada corrige únicamente esa incompatibilidad y simplifica la instalación de paquetes, conservando los cálculos."
+  }
+]

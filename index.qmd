@@ -1,0 +1,122 @@
+---
+title: "Práctica de Régimen de Temperatura"
+subtitle: "Prof. Miguel Silva"
+lang: es
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    slide-number: true
+    progress: true
+    controls: true
+    center: false
+    transition: slide
+    width: 1280
+    height: 720
+    margin: 0.07
+    fontsize: 28px
+---
+
+## ¿En qué consiste la práctica?
+
+**Una sesión breve para caracterizar el régimen térmico de una localidad.**
+
+- Trabajaremos con temperaturas diarias del período **2001–2025**.
+- Calcularemos promedios mensuales a partir de **todos los años**.
+- Obtendremos dos gráficos y tablas de resultados.
+- Al terminar, elaboraremos un **informe de análisis**.
+
+::: {.nota}
+No se calcularán grados-día. La actividad se centra en temperaturas y amplitudes térmicas.
+:::
+
+## Objetivos de aprendizaje
+
+1. Calcular las temperaturas medias, máximas y mínimas mensuales de una serie histórica.
+2. Determinar la amplitud térmica diaria media mensual y la amplitud del ciclo anual medio.
+3. Representar los resultados en gráficos sencillos.
+4. Interpretar el comportamiento térmico estacional de la localidad.
+
+## Antes de comenzar
+
+Organiza tu proyecto en RStudio con esta estructura:
+
+```text
+Regimen_Temperatura/
+├── 01_practica_regimen_temperatura.R
+├── datos/
+│   └── datos_diarios_2001_2025.csv
+└── resultados/  ← se crea al ejecutar el script
+```
+
+- Modifica **latitud y longitud** en el script para elegir tu localidad.
+- El script obtiene los registros diarios desde **NASA POWER (AG)** y guarda el CSV en `datos/`.
+- Conserva ese archivo para reproducir el análisis.
+
+::: {.nota}
+Usa el script ajustado incluido en este proyecto: lee el **CSV** que genera en el paso previo.
+:::
+
+## Actividad 1 · Temperaturas mensuales
+
+A partir de la serie 2001–2025:
+
+- Calcula el promedio de **T máxima, T media y T mínima** para cada mes de cada año.
+- Promedia después esos valores entre años, para obtener el **ciclo anual medio**.
+- Identifica los meses **más cálido** y **más frío**.
+
+**Producto:** un gráfico con tres curvas mensuales.
+
+## Actividad 2 · Amplitudes térmicas
+
+**Amplitud térmica diaria (ATD)**
+
+\[ATD = T_{max} - T_{min}\]
+
+Calcula la ATD diaria y después su promedio por mes, considerando todos los años.
+
+**Amplitud del ciclo anual medio**
+
+\[A_{anual} = \overline{T}_{mes\ más\ cálido} - \overline{T}_{mes\ más\ frío}\]
+
+**Producto:** gráfico de barras con las 12 ATD mensuales medias y valor de amplitud anual.
+
+## Ejecución y archivos de salida
+
+Desde la carpeta principal del proyecto, ejecuta:
+
+```r
+source("01_practica_regimen_temperatura.R")
+```
+
+Guarda los archivos de entrada en `datos/` y los resultados en `resultados/`:
+
+- `temperatura_por_anio_y_mes.csv`
+- `temperatura_promedio_mensual_2001_2025.csv`
+- `resumen_regimen_temperatura.csv`
+
+Incorpora **los dos gráficos** al informe (puedes exportarlos desde el panel de gráficos de RStudio).
+
+## Informe final · Preguntas de análisis
+
+Una vez terminada la corrida, prepara un **informe breve** con metodología, tablas, gráficos y respuestas:
+
+1. ¿Cuáles son los meses con mayor y menor temperatura media en 2001–2025?
+2. ¿Cuál es la amplitud térmica del ciclo anual medio?
+3. ¿En qué mes se observa la mayor amplitud térmica diaria promedio y por qué?
+4. ¿Qué diferencias estacionales muestran las temperaturas y la amplitud diaria?
+
+**Entrega:** informe con interpretación de resultados, no solo capturas de R.
+
+## Materiales y cierre
+
+- [Descargar script para la práctica](scripts/01_practica_regimen_temperatura.R)
+- [Consultar script original adjunto](scripts/01_practica_regimen_temperatura_original.R)
+
+**Secuencia de trabajo**
+
+**Preparar datos → ejecutar cálculos → revisar gráficos y tablas → redactar informe.**
+
+::: {.nota}
+El archivo original genera un CSV, pero intenta abrir un XLSX después. La versión recomendada corrige únicamente esa incompatibilidad y simplifica la instalación de paquetes, conservando los cálculos.
+:::
