@@ -26,9 +26,6 @@ format:
 - Obtendremos dos gráficos y tablas de resultados.
 - Al terminar, elaboraremos un **informe de análisis**.
 
-::: {.nota}
-No se calcularán grados-día. La actividad se centra en temperaturas y amplitudes térmicas.
-:::
 
 ## Objetivos de aprendizaje
 
@@ -111,12 +108,8 @@ Una vez terminada la corrida, prepara un **informe breve** con metodología, tab
 ## Materiales y cierre
 
 - [Descargar script para la práctica](scripts/01_practica_regimen_temperatura.R)
-- [Consultar script original adjunto](scripts/01_practica_regimen_temperatura_original.R)
 
 **Secuencia de trabajo**
 
 **Preparar datos → ejecutar cálculos → revisar gráficos y tablas → redactar informe.**
 
-::: {.nota}
-El archivo original genera un CSV, pero intenta abrir un XLSX después. La versión recomendada corrige únicamente esa incompatibilidad y simplifica la instalación de paquetes, conservando los cálculos.
-:::

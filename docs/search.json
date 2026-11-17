@@ -4,7 +4,7 @@
     "href": "index.html#en-qué-consiste-la-práctica",
     "title": "Práctica de Régimen de Temperatura",
     "section": "¿En qué consiste la práctica?",
-    "text": "¿En qué consiste la práctica?\nUna sesión breve para caracterizar el régimen térmico de una localidad.\n\nTrabajaremos con temperaturas diarias del período 2001–2025.\nCalcularemos promedios mensuales a partir de todos los años.\nObtendremos dos gráficos y tablas de resultados.\nAl terminar, elaboraremos un informe de análisis.\n\n\nNo se calcularán grados-día. La actividad se centra en temperaturas y amplitudes térmicas."
+    "text": "¿En qué consiste la práctica?\nUna sesión breve para caracterizar el régimen térmico de una localidad.\n\nTrabajaremos con temperaturas diarias del período 2001–2025.\nCalcularemos promedios mensuales a partir de todos los años.\nObtendremos dos gráficos y tablas de resultados.\nAl terminar, elaboraremos un informe de análisis."
   },
   {
     "objectID": "index.html#objetivos-de-aprendizaje",
@@ -53,6 +53,6 @@
     "href": "index.html#materiales-y-cierre",
     "title": "Práctica de Régimen de Temperatura",
     "section": "Materiales y cierre",
-    "text": "Materiales y cierre\n\nDescargar script para la práctica\nConsultar script original adjunto\n\nSecuencia de trabajo\nPreparar datos → ejecutar cálculos → revisar gráficos y tablas → redactar informe.\n\nEl archivo original genera un CSV, pero intenta abrir un XLSX después. La versión recomendada corrige únicamente esa incompatibilidad y simplifica la instalación de paquetes, conservando los cálculos."
+    "text": "Materiales y cierre\n\nDescargar script para la práctica\n\nSecuencia de trabajo\nPreparar datos → ejecutar cálculos → revisar gráficos y tablas → redactar informe."
   }
 ]
